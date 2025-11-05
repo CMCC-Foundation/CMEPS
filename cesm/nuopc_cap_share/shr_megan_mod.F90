@@ -43,6 +43,7 @@ module shr_megan_mod
      integer               :: index
      real(r8), pointer     :: emis_factors(:) ! function of plant-function-type (PFT)
      integer               :: class_number    ! MEGAN class number
+     real(r8)              :: coeff           ! emissions component coeffecient
      real(r8)              :: molec_weight    ! molecular weight of the MEGAN compound (g/mole)
      type(shr_megan_megcomp_t), pointer :: next_megcomp ! points to next member in the linked list
   endtype shr_megan_megcomp_t
