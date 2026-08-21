@@ -26,7 +26,8 @@
     <desc forcing="SSP460">CMIP6 SSP4-6.0 forcing</desc>
     <desc forcing="SSP534">CMIP6 SSP5-3.4 forcing</desc>
     <desc forcing="SSP585">CMIP6 SSP5-8.5 forcing</desc>
-    <desc cpl="BGC[%BDRD][%BPRP]">Biogeochemistry intercomponent </desc>
+    <desc cpl="BGC[%B][%BDRD][%BPRP]">Biogeochemistry intercomponent </desc>
+    <desc option="B"> with diagnostic CO2</desc>
     <desc option="BDRD"> with diagnostic CO2</desc>
     <desc option="BPRP"> with prognostic CO2 </desc>
   </description>
@@ -115,6 +116,7 @@
       <value compset="SSP.*_DATM.*_CLM">CO2A</value>
       <value compset="_BGC%BPRP">CO2C</value>
       <value compset="_BGC%BDRD">CO2C</value>
+      <value compset="_BGC%B">CO2C</value>
       <value compset="20TR_DATM%IAF.*_BLOM%ECO">CO2A</value>
       <value compset="20TR_DATM%JRA.*_BLOM%ECO">CO2A</value>
     </values>
