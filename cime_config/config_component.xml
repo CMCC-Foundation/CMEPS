@@ -266,16 +266,6 @@
     </desc>
   </entry>
 
-  <entry id="RUN_REFDIR">
-    <type>char</type>
-    <default_value>ccsm4_init</default_value>
-    <group>run_begin_stop_restart</group>
-    <file>env_run.xml</file>
-    <desc>
-      Reference directory containing RUN_REFCASE data - used for hybrid or branch runs
-    </desc>
-  </entry>
-
   <entry id="RUN_REFCASE">
     <type>char</type>
     <default_value>case.std</default_value>
@@ -313,6 +303,16 @@
     <file>env_run.xml</file>
     <desc>
       Run current start date (yyyy-mm-dd). Runtime date counter of simulation (DO NOT CHANGE)
+    </desc>
+  </entry>
+
+  <entry id="RUN_REFDIR">
+    <type>char</type>
+    <default_value>ccsm4_init</default_value>
+    <group>run_begin_stop_restart</group>
+    <file>env_run.xml</file>
+    <desc>
+      Reference directory containing RUN_REFCASE data - used for hybrid or branch runs
     </desc>
   </entry>
 
@@ -488,17 +488,6 @@
     </desc>
   </entry>
 
-  <entry id="MEDIATOR_READ_RESTART">
-    <type>logical</type>
-    <valid_values>TRUE,FALSE</valid_values>
-    <default_value>FALSE</default_value>
-    <group>run_begin_stop_restart</group>
-    <file>env_run.xml</file>
-    <desc>
-      A setting of TRUE implies a continuation run for mediator only
-    </desc>
-  </entry>
-
   <entry id="RESUBMIT">
     <type>integer</type>
     <default_value>0</default_value>
@@ -512,6 +501,17 @@
     Long runs can easily outstrip supercomputer queue time limits. For
     this reason, a case is usually run as a series of jobs, each
     restarting where the previous finished.
+    </desc>
+  </entry>
+
+  <entry id="MEDIATOR_READ_RESTART">
+    <type>logical</type>
+    <valid_values>TRUE,FALSE</valid_values>
+    <default_value>FALSE</default_value>
+    <group>run_begin_stop_restart</group>
+    <file>env_run.xml</file>
+    <desc>
+      A setting of TRUE implies a continuation run for mediator only
     </desc>
   </entry>
 
